@@ -3,14 +3,14 @@ from __future__ import annotations
 from persona.interface import PersonaInterface
 
 
-class HumanParentPersona(PersonaInterface):
+class ParentOfChildPersona(PersonaInterface):
     @property
     def key(self) -> str:
         return "parent"
 
     @property
     def title(self) -> str:
-        return "Human Parent of a Child"
+        return "Parent of a Child"
 
     @property
     def prompt(self) -> str:
